@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Tulpar item</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f6f4f0; --fg: #1f1b16; --muted: #6b6258; --accent: #b08a5b; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #171717; --fg: #ebebeb; --muted: #a39b91; } }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--fg);
+         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { padding: 32px 16px; text-align: center; max-width: 420px; }
+  .brand { color: var(--accent); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; }
+  #code { font-size: 40px; font-weight: 700; margin: 8px 0 12px; letter-spacing: .02em; }
+  #message { color: var(--muted); margin: 0; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Tulpar inventory</div>
+  <div id="code">&nbsp;</div>
+  <p id="message"></p>
+</main>
+<script src="/scan.js"></script>
+</body>
+</html>
